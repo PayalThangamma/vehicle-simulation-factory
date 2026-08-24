@@ -1,0 +1,2 @@
+matplotlib==3.10.5
+pytest==9.1.1

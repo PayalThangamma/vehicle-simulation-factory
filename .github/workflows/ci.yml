@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Install C++ build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build
+
+      - name: Configure CMake
+        run: |
+          cmake \
+            -S cpp \
+            -B build \
+            -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build simulation runner
+        run: |
+          cmake --build build
+
+      - name: Run automated tests
+        run: |
+          python -m pytest tests -v
+
+      - name: Run full validation
+        run: |
+          python factory/run_factory.py \
+            --workers 4 \
+            --model-version v3 \
+            --duration 30 \
+            --no-db
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            -t vehicle-simulation-factory .
+
+      - name: Run Docker validation
+        run: |
+          docker run \
+            --rm \
+            vehicle-simulation-factory

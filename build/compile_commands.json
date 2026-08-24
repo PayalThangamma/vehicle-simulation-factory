@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/payal/vehicle-simulation-factory/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Users/payal/vehicle-simulation-factory/cpp/include -IC:/Users/payal/vehicle-simulation-factory/build/_deps/nlohmann_json-src/include -std=c++17 -o CMakeFiles\\simulation_runner.dir\\src\\main.cpp.obj -c C:\\Users\\payal\\vehicle-simulation-factory\\cpp\\src\\main.cpp",
+  "file": "C:/Users/payal/vehicle-simulation-factory/cpp/src/main.cpp",
+  "output": "C:/Users/payal/vehicle-simulation-factory/build/CMakeFiles/simulation_runner.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/payal/vehicle-simulation-factory/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Users/payal/vehicle-simulation-factory/cpp/include -IC:/Users/payal/vehicle-simulation-factory/build/_deps/nlohmann_json-src/include -std=c++17 -o CMakeFiles\\simulation_runner.dir\\src\\vehicle_model.cpp.obj -c C:\\Users\\payal\\vehicle-simulation-factory\\cpp\\src\\vehicle_model.cpp",
+  "file": "C:/Users/payal/vehicle-simulation-factory/cpp/src/vehicle_model.cpp",
+  "output": "C:/Users/payal/vehicle-simulation-factory/build/CMakeFiles/simulation_runner.dir/src/vehicle_model.cpp.obj"
+},
+{
+  "directory": "C:/Users/payal/vehicle-simulation-factory/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -IC:/Users/payal/vehicle-simulation-factory/cpp/include -IC:/Users/payal/vehicle-simulation-factory/build/_deps/nlohmann_json-src/include -std=c++17 -o CMakeFiles\\simulation_runner.dir\\src\\simulation_runner.cpp.obj -c C:\\Users\\payal\\vehicle-simulation-factory\\cpp\\src\\simulation_runner.cpp",
+  "file": "C:/Users/payal/vehicle-simulation-factory/cpp/src/simulation_runner.cpp",
+  "output": "C:/Users/payal/vehicle-simulation-factory/build/CMakeFiles/simulation_runner.dir/src/simulation_runner.cpp.obj"
+}
+]

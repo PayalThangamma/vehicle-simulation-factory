@@ -1,0 +1,19 @@
+{
+  "scenario_id": "acc_00076",
+  "ego_initial_position": 0.0,
+  "ego_initial_velocity": 15.112023,
+  "lead_initial_position": 30.208753,
+  "lead_initial_velocity": 29.344064,
+  "desired_time_headway": 1.771894,
+  "minimum_gap": 7.940596,
+  "gap_kp": 0.463064,
+  "relative_velocity_kp": 0.879816,
+  "minimum_acceleration": -5.0,
+  "maximum_acceleration": 3.0,
+  "lead_brake_start": 4.479485,
+  "lead_brake_duration": 0.968956,
+  "lead_brake_acceleration": -4.191103,
+  "duration": 15.0,
+  "dt": 0.01,
+  "closing_speed_gain": 0.4
+}
