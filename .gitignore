@@ -1,0 +1,8 @@
+build/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+
+results/simulation_factory.db
+results/runs/

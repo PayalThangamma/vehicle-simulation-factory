@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Users/payal/vehicle-simulation-factory/build/cmake_install.cmake",
-		"C:/Users/payal/vehicle-simulation-factory/build/_deps/nlohmann_json-build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
