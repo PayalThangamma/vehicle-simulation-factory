@@ -2,7 +2,7 @@ import argparse
 import sqlite3
 from pathlib import Path
 
-from database import DATABASE_PATH
+from factory.database import DATABASE_PATH
 
 
 def load_run(

@@ -1,6 +1,6 @@
 import sqlite3
 
-from database import DATABASE_PATH
+from factory.database import DATABASE_PATH
 
 
 def main():

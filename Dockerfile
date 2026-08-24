@@ -36,4 +36,4 @@ RUN python \
     tests \
     -v
 
-CMD ["python", "factory/run_factory.py", "--workers", "4", "--model-version", "v3", "--duration", "30", "--no-db"]
+CMD ["python", "-m", "factory.run_factory", "--workers", "4", "--model-version", "v3", "--duration", "30", "--no-db"]

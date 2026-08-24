@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
   pull_request:
     branches:
       - main
@@ -54,7 +55,7 @@ jobs:
 
       - name: Run full validation
         run: |
-          python factory/run_factory.py \
+          python -m factory.run_factory \
             --workers 4 \
             --model-version v3 \
             --duration 30 \

@@ -15,6 +15,8 @@ $CMake = "C:\msys64\ucrt64\bin\cmake.exe"
 
 $Compiler = "C:/msys64/ucrt64/bin/g++.exe"
 
+Set-Location $Root
+
 Write-Host ""
 Write-Host "============================================"
 Write-Host "Vehicle Simulation Factory"
@@ -23,8 +25,6 @@ Write-Host "Workers:       $Workers"
 Write-Host "Duration:      $Duration s"
 Write-Host "Model version: $ModelVersion"
 Write-Host "============================================"
-
-Set-Location $Root
 
 Write-Host ""
 Write-Host "[1/5] Configuring CMake..."
@@ -71,7 +71,7 @@ Write-Host ""
 Write-Host "[4/5] Running full simulation factory..."
 
 & $Python `
-    "$Root\factory\run_factory.py" `
+    -m factory.run_factory `
     --workers $Workers `
     --model-version $ModelVersion `
     --duration $Duration

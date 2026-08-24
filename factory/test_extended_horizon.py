@@ -5,7 +5,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
-from database import DATABASE_PATH
+from factory.database import DATABASE_PATH
 
 
 ROOT = Path(__file__).resolve().parents[1]
